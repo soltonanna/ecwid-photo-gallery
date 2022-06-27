@@ -3,7 +3,7 @@ import Container from './UI/Container';
 
 const PhotoGallery = (props) => {
   return (
-    <Container>
+    <Container className = 'gallery'>
       {
         props.allImages.map( image => (
           <img src = {image.url} 
@@ -12,6 +12,7 @@ const PhotoGallery = (props) => {
             key = {image.id} />
        ))
       }
+ 
     </Container>
   )
 }
